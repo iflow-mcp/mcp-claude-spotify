@@ -88,6 +88,7 @@ function saveTokens() {
     }
     catch (error) {
         console.error(`Error saving tokens: ${error}`);
+        // Print the full error stack for debugging
         if (error instanceof Error && error.stack) {
             console.error(error.stack);
         }
@@ -426,6 +427,7 @@ async function startAuthServer() {
                 redirect_uri: REDIRECT_URI,
             })}`);
         });
+        // Callback endpoint receives authorization code and exchanges it for tokens
         app.get("/callback", async (req, res) => {
             const code = req.query.code || null;
             if (!code) {

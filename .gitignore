@@ -200,3 +200,31 @@ stage/
 
 # Source archive packed by `snapcraft cleanbuild` before pushing to the LXD container
 /*_source.tar.bz2
+level.log
+serverConfig.json
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.tar.gz
+.parcel-cache/
+.next/
+out/
+.nuxt/

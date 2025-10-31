@@ -1,9 +1,12 @@
 {
-    "name": "mcp-claude-spotify",
+    "name": "@iflow-mcp/mcp-claude-spotify",
     "version": "0.1.1",
     "description": "Model Context Protocol server for Spotify using Claude Desktop",
     "main": "index.js",
     "type": "module",
+    "bin": {
+        "mcp-claude-spotify": "build/index.js"
+    },
     "scripts": {
         "start": "node build/index.js",
         "dev": "tsc --watch && node build/index.js",
